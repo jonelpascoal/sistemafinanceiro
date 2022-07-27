@@ -4,10 +4,14 @@ import { ContentWrapperComponent } from './componentes/content-wrapper/content-w
 import { EmolumentoComponent } from './componentes/emolumento/emolumento.component';
 import { EstudanteComponent } from './componentes/estudante/estudante.component';
 import { RelatorioComponent } from './componentes/relatorio/relatorio.component';
+import { SolicitacaoComponent } from './componentes/solicitacao/solicitacao.component';
 
 const routes: Routes = [
   {
     path:'inicio', component : ContentWrapperComponent
+  },
+  {
+    path: 'solicitacao', component : SolicitacaoComponent
   },
   {
     path: 'estudante', component : EstudanteComponent

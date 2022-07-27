@@ -65,7 +65,7 @@
                             data-accordion="false">
 
                             <li class="nav-item menu-open">
-                                <a href="#" class="nav-link active">
+                                <a [routerLink]="['/inicio']" (click)="getActiveOption(0)" class="nav-link active" [ngClass]="{'active' : activeOptions[0]}">
                                     <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
                                         Dashboard
@@ -73,32 +73,32 @@
                                     </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="pages/widgets.html" class="nav-link">
+                            <li class="nav-item" (click)="getActiveOption(1)">
+                                <a [routerLink]="['/solicitacao']"  class="nav-link" [ngClass]="{'active' : activeOptions[1]}">
                                     <i class="nav-icon fas fa-th"></i>
                                     <p>
                                         Solicitação
                                     </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="pages/widgets.html" class="nav-link">
+                            <li class="nav-item" (click)="getActiveOption(2)">
+                                <a [routerLink]="['/emolumento']"class="nav-link" [ngClass]="{'active' : activeOptions[2]}">
                                     <i class="nav-icon fas fa-th"></i>
                                     <p>
                                         Emolumentos
                                     </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="pages/widgets.html" class="nav-link">
+                            <li class="nav-item" (click)="getActiveOption(3)"> 
+                                <a [routerLink]="['/estudante']" class="nav-link" [ngClass]="{'active' : activeOptions[3]}">
                                     <i class="nav-icon fas fa-th"></i>
                                     <p>
                                         Estudante
                                     </p>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
+                            <li class="nav-item" (click)="getActiveOption(4)">
+                                <a [routerLink]="['/relatorio']" class="nav-link" [ngClass]="{'active' : activeOptions[4]}">
                                     <i class="nav-icon fas fa-copy"></i>
                                     <p>
                                         Relatório

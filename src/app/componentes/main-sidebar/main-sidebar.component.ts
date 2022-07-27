@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainSidebarComponent implements OnInit {
 
+  activeOptions = [true, false, false, false, false];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getActiveOption(index : number){
+    this.activeOptions.fill(false);
+    this.activeOptions[index]=true;
   }
 
 }
